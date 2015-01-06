@@ -1,5 +1,5 @@
 ---
-title: Unit testing on CodeIgniter
+title: CLI Unit testing on CodeIgniter
 layout: post
 date: 2015-01-07 1:30:00
 ---
