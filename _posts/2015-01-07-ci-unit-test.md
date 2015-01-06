@@ -1,6 +1,7 @@
 ---
 title: Unit testing on CodeIgniter
 layout: post
+date: 2015-01-07 1:30:00
 ---
 
 CodeIgniter (v2.x) has a simple unit testing library, but it's way too simple.  
@@ -45,15 +46,16 @@ if ($this->input->is_cli_request()) {
 ```
 
 And just call your unit test controller as such:
+
 ```php
 php /path/to/ci/index.php test_controller index
 ```
 
 It's a small and simple, but nice solution and works pretty well for me.  
-
-
-
-P.S. 
+  
+  
+  
+P.S.   
 I should start looking into BDD testing frameworks for PHP; Unit testing isn't enough these days. I want something as intuitive and reliable as Rspec. [Behat](http://docs.behat.org/en/v2.5/) would be the best option maybe? 
 
 

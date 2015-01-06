@@ -1,6 +1,7 @@
 ---
 title: My First Post
 layout: post
+date: 2015-01-06 22:00:00
 ---
 
 This is my first post.  
