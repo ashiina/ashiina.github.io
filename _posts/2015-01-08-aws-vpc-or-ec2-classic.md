@@ -11,16 +11,14 @@ I want to go over private and public subnets of VPCs, and what to think of them,
 
 ---
 
-#### VPC with private subnets
+### VPC with private subnets
 
 Private subnets are good; They are secure. They hide your internal instances from the rest of the world, in your own little network.  
 
 But most practical use-cases of a server requires some sort of outbound internet connection - whether it be rubygems or yum updates. 
 This means that your VPC has to be equipped with a [ NAT instance ](http://docs.aws.amazon.com/en_us/AmazonVPC/latest/UserGuide/VPC_NAT_Instance.html) that'll handle the outbound traffic of your private subnet instances.
 
-Frankly I think NAT instances are bad. It's a SPoF, because once it goes down your application can't perform outbound connections.  
-It's also a potential bottleneck for traffic, since all of your internet traffic goes through that one small instance that just sits there doing nothing.  
-Having an extra EC2 instance to take care of which is a potential SPoF and a bottleneck is VERY stressful.
+Frankly I think NAT instances are bad. It's a SPoF, because once it goes down your application can't perform outbound connections. It's also a potential bottleneck for traffic, since all of your internet traffic goes through that one small instance that just sits there doing nothing. Having an extra EC2 instance to take care of which is a potential SPoF and a bottleneck is VERY stressful.
 
 So, unless your application does not have ANY critical outbound traffic like third-party APIs or github repositories, NAT instances will always be a source of your worries. You can find several solutions to constructing a high-availability NAT instance architecture, like [here](https://cloudkinetics.wordpress.com/2014/04/05/high-availability-for-aws-vpc-nat-instances/) or [here](http://www.raghuramanb.com/2013/03/aws-vpc-nat-instance-failover-high-availability.html), and even Amazon themselves came out with a pattern [here](https://aws.amazon.com/articles/2781451301784570), but for me, implementing these patterns is a hastle in itself unless you really, really want to hide your instances.
 
@@ -28,7 +26,9 @@ So, unless your application does not have ANY critical outbound traffic like thi
 
 Luckily Amazon has been providing support for allocating public IPs on instances on public subnets, recently with [Elastic Beanstalk](https://aws.amazon.com/jp/about-aws/whats-new/2014/04/09/aws-elastic-beanstalk-announces-vpc-public-ip-support/) too. So how about that?
 
-#### VPC with public subnets
+---
+
+### VPC with public subnets
 
 Since instances in public subnets can have public IPs, they are capable of outbound internect connection from the start.  
 It is a pretty convenient solution.  
