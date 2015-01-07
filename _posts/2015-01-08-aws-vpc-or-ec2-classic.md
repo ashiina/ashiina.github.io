@@ -13,7 +13,7 @@ I want to go over private and public subnets of VPCs, and what to think of them,
 
 #### VPC with private subnets
 
-Private subnets are good; They are secure. They hide your internal instances to be discovered from the rest of the world.  
+Private subnets are good; They are secure. They hide your internal instances from the rest of the world, in your own little network.  
 
 But most practical use-cases of a server requires some sort of outbound internet connection - whether it be rubygems or yum updates. 
 This means that your VPC has to be equipped with a [ NAT instance ](http://docs.aws.amazon.com/en_us/AmazonVPC/latest/UserGuide/VPC_NAT_Instance.html) that'll handle the outbound traffic of your private subnet instances.
