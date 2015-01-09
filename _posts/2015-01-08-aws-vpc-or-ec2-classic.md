@@ -2,6 +2,8 @@
 title: Amazon VPC or EC2 Classics?
 layout: post
 date: 2015-01-08 1:20:00
+tags: AWS Security
+comments: true
 ---
 
 I Originally started working with EC2 Classic (as most would), and started to fine-tune the Security Group settings in order to construct a robust network security, and now am working with VPCs.  

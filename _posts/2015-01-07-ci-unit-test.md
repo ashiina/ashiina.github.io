@@ -2,6 +2,8 @@
 title: CLI Unit testing on CodeIgniter
 layout: post
 date: 2015-01-07 1:30:00
+tags: PHP testing
+comments: true
 ---
 
 CodeIgniter (v2.x) has a simple unit testing library, but it's way too simple.  

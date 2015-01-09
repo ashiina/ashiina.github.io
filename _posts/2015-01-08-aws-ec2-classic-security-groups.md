@@ -2,6 +2,8 @@
 title: Amazon EC2 Classic - Security Group best practice
 layout: post
 date: 2015-01-08 1:40:00
+tags: AWS Security
+comments: true
 ---
 
 Here is an example for a descent Security Group set up, for those of you who use EC2 Classics.  
