@@ -57,7 +57,7 @@ Playbooks are also simple; You just write YAMLs in a certain structure.
 
 Define your hosts group like this, inside `/etc/ansible/hosts`
 
-```
+```yaml
 # /etc/ansible/hosts
 [webservers]
 192.168.10.10

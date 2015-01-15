@@ -10,6 +10,7 @@ CodeIgniter (v2.x) has a simple unit testing library, but it's way too simple.
 As a default, all you can do is write simple comparisons of expected values, as such:
 
 ```php
+<?php
 $test = 1 + 1;
 
 $expected_result = 2;
@@ -22,6 +23,7 @@ $this->unit->run($test, $expected_result, $test_name);
 and the result can either be displayed as an HTML, or can be returned as an array.  
 
 ```php
+<?php
 echo $this->unit->report();
 $result = $this->unit->result();
 ```
@@ -38,6 +40,7 @@ It's an extension to the `Unit_test` library, adding one extra function which is
 Since we can determine whether the request is a HTTP or a CLI request, here's a typical implementation I write:
 
 ```php
+<?php
 /* some test code above... */
 
 if ($this->input->is_cli_request()) {
@@ -49,7 +52,7 @@ if ($this->input->is_cli_request()) {
 
 And just call your unit test controller as such:
 
-```php
+```bash
 php /path/to/ci/index.php test_controller index
 ```
 
