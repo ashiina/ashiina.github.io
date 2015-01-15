@@ -6,7 +6,7 @@ tags: IRC Information
 comments: true
 ---
 
-I just discovered Freenode. It's an IRC server for general technology, mainly open source stuff, but has things like hardware and electronics (Arduino) also. Seems like a great place to gather latest information on the technology.  
+I just discovered Freenode. It's an IRC server for general technology, mainly open source stuff, but has things like hardware and electronics (Arduino) also. Seems like a great place to gather latest information on the technology. *Also has a Minecraft channel and I like that a lot*
 I like it how everyone ask questions very freely, and other people try to answer them the best they can. I think this kind of atmosphere is very beneficial to developers and hackers. I smell a similar atmosphere as StackOverflow; Just a lot more casual.  
 
 **To join:**  
