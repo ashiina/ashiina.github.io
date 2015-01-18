@@ -46,11 +46,11 @@ It would be great if I can have the lambda-local handle that automatically, but 
 I wish there is a better solution for this. 
 
 
---
-
-If AWS comes out with their own Lambda-local tool this will become obsolete, but until then, it's a simple & independent tool that doesn't require any learning curves and any additional code/configuration on your existing Lambda function scripts, so I think it's not too bad for a start. 
+-----  
 
 Personally I think Amazon Lambda has a great amount of potential, so I believe it's important to have a **dead-easy** development environment for it, rather than having to upload your script/zip everytime. Hell, you don't even have to sign up for Lambda to play with Lambda.
+
+If AWS comes out with their own Lambda-local tool this will become obsolete, but until then, it's a simple & independent tool that doesn't require any learning curves and any additional code/configuration on your existing Lambda function scripts. I think it's not too bad for a start. 
 
 So please try it out, fork it, or give me any feedback!
 
