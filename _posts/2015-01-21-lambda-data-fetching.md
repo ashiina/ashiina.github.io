@@ -13,12 +13,25 @@ Sample (proof of concept) for data fetching with Amazon Lambda &amp; SQS
 [https://github.com/ashiina/aws-lambda-datafetcher-sample](https://github.com/ashiina/aws-lambda-datafetcher-sample)
 
 
-### Concept
-Since Amazon Lambda does not have a way to return data after invokation, it seemed inplausible to create a **data retrieval model** only using Lambda.  
-But I thought that if I use it together with SQS long-polling, it may be possible to implement an asynchronous request to get data, using only Amazon' managed services. So this is a proof-of-concept showing how that can be done.  
+### Concepts
+I wanted to see if I can develop a way to query and get data from a database, without directly querying the database from the client. I wanted to try to implement a **data retrieval request-response** model, just using AWS's fully managed services.
+
+But since Amazon Lambda does not have a way to return data after invokation, it seemed extremely hard, if not impossible, to create such a thing.  
+
+I thought that if I use it together with SQS long-polling, it may be possible to implement an asynchronous data retrieval request.  
+So this is a proof-of-concept showing how that can be done. 
+
+### Implications
+Being able to fetch data just with Lambda & SQS means that entire application backends can be made just with this technology and a database; Without managing any EC2 instances (a 2-Tier architecture, in AWS terms).  
+
+This proof-of-concept only uses `fetch_id` as a primary key to retrieve data, but this idea can be extended to executing more complex queries, or even passing raw SQL queries over Lambda into RDS.  
 
 
-### What it's Doing 
+### Limitations
+Since this fetching goes through multiple HTTP request, the response time is not optimal (3~5 seconds on my environment). 
+
+
+### How it Works
 0. Set up:
   1. Create a SQS queue with the name "user-queue-{user_id}", where {user_id} will be the unique ID of the user who will retrieve data.  
     (In a real life setting, each users' SQS should be automatically created upon the creation of that user.)
@@ -50,15 +63,6 @@ But I thought that if I use it together with SQS long-polling, it may be possibl
 
 8. Finally it will call `sqs.deleteMessage()` to delete the message it successfully received. 
 
-
-### Implications
-Being able to fetch data just with Lambda & SQS means that entire application backends can be made just with this technology and a database; Without managing any EC2 instances (a 2-Tier architecture, in AWS terms).  
-
-This proof-of-concept only uses `fetch_id` as a primary key to retrieve data, but this idea can be extended to executing more complex queries, or even passing raw SQL queries over Lambda into RDS.  
-
-
-### Limitations
-Since this fetching goes through multiple HTTP request, the response time is not optimal (3~5 seconds on my environment). 
 
 
 
