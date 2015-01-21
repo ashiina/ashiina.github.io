@@ -1,5 +1,5 @@
 ---
-title: Fetching Data with AMazon Lambda & SQS
+title: Fetching Data with Amazon Lambda & SQS
 layout: post
 date: 2015-01-21 04:10:00
 tags: AWS Lambda SQS
