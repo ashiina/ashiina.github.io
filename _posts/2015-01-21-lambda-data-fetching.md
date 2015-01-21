@@ -1,7 +1,7 @@
 ---
 title: Fetching Data with AMazon Lambda & SQS
 layout: post
-date: 2015-01-20 22:43:00
+date: 2015-01-21 04:10:00
 tags: AWS Lambda SQS
 comments: true
 ---
