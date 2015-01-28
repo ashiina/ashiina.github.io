@@ -16,9 +16,14 @@ Here I do have some inefficiencies that I may want to avoid when developing a hi
  * **Frame rendering**: I am drawing the entire background and re-drawing the objects on every frame. I believe there is a more efficient way of drawing the graphics on the canvas - for example only drawing the delta.
  * **Snake collision detection**: In every frame I am comparing every cell of the snake with the position of its head in order to check for collision. I'm doing this through a simple `for` loop. This can get pretty expensive when the snake becomes very long. Maybe I should have a more efficient way of searching through the array, for example setting the x and y dimensions as a key, and searching for the key.  I'm sure key searching is a lot faster.  
 
+You can play it here:  
+[http://ashiina.github.io/lab/snake-game/snakegame.html](http://ashiina.github.io/lab/snake-game/snakegame.html)  
+
+
+
+Here's the code:  
 [https://github.com/ashiina/snake-game-demo](https://github.com/ashiina/snake-game-demo)
 
-Here's the code. Fun stuff.  
 
 
 
