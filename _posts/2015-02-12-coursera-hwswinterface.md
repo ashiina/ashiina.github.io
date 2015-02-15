@@ -1,5 +1,5 @@
 ---
-title: Coursera - Hardware/Software Interface: Done
+title: Coursera - Hardware/Software Interface Done
 layout: post
 date: 2015-02-12 23:45:00
 tags: C Assembly Memory Linux Coursera
