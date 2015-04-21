@@ -18,6 +18,7 @@ So here's my code:
 Yep, and as expected, the simulation always gives me an result of a 66.6% chance of success - Not 50%.  
 
 ```
+$ python run_montyhall.py y 100
 {'Wrong': 35, 'Correct': 65}
 ```  
 
