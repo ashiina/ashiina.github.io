@@ -43,7 +43,7 @@ First, create APNS certificates just as you did the App Certificates. (I assume 
 Next, follow these steps to create a PEM file (On a Mac OS):  
 1. Download and double-click the certificate file. This should import the certificate into your keychain.  
 2. Open the **Keychain Assistant**, and look for the certificate you just imported.  
-3. Expand the certificate, then **select both the Certificate file AND the private key**. (It won't work properly if you don't select both)
+3. Expand the certificate, then **select ONLY the certificate**. (It won't work properly if you select both)  
 4. Right-click the highlighted files, and "Export 2 elements". Save them without a passphrase.  
 5. On your terminal, run the following command:  
 ```
