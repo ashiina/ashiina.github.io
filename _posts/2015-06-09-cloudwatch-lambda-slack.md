@@ -10,7 +10,11 @@ I wrote a Lambda script that let posts your Amazon CloudWatch alerts to your Sla
 I realized alerts by e-mail are kinda old-school already. In our company we never use e-mail internally anymore; The ONLY internal e-mail is server alerts.  
 So why not take that to Slack too?  
 
+Here it is:  
+
 [https://github.com/ashiina/aws-lambda-cloudwatch-slack](https://github.com/ashiina/aws-lambda-cloudwatch-slack)
+
+---  
 
 
 ## lambda-cloudwatch-slack
