@@ -28,7 +28,7 @@ http://www.tmonews.com/2015/08/samsung-galaxy-s4-getting-an-update-with-stagefri
 
 So there is  
  1. Google (OS developer)  
- 2. Samsung (manufacturer)
+ 2. Samsung (manufacturer)  
  3. Verizon (phone carrier)  
  4. End-user  
 
