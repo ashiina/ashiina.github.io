@@ -27,7 +27,10 @@ If you can't show your customer/stakeholer a (potentially) shippable product by 
 
 ## Scrum master certificate  
 
-I just don't know why it exists other than for profit. 
+I believe that the Scrum Master certification is a good idea for people who already have had enough in-field experience with scrum, to get a deeper understanding. But I don't think it works the other way around - If you haven't had in-field experience, there is no way you will become a functional scrum master just with the few days of training. 
+Scrum is learned in field with the different problems that come with different sizes/types of projects.  
+I believe there is a lot more commercial interest behind the Scrum Master certification.  
+
 
 ---  
 
