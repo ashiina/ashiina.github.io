@@ -5,19 +5,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="{{ page.tags | join: ',' }}">
-	<meta name="description" content="{{ content | strip_html | strip_newlines | truncate: 120 }}">
+	<meta name="description" content="{{ content | strip_html | strip_newlines | truncate: 240 }}">
     <title>{% if page.title | size > 4 %} {{ page.title }} | {% endif %}{{ site.name }}</title>
-    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <script src="{{ site.url }}/js/jquery.min.js"></script>
+    <script src="{{ site.url }}/js/bootstrap.min.js"></script>
+    <link href="{{ site.url }}/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
 
-	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:title" content="{% if page.title | size > 4 %} {{ page.title }} | {% endif %}{{ site.name }}" />
 	<meta property="og:type" content="blog" />
-	<meta property="og:url" content="{{ site.url }}" />
-	<meta property="og:image" content="{{ site.baseurl }}/images/logo_ogp.png" />
+	<meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
+	<meta property="og:image" content="{{ site.url }}/images/logo_ogp.png" />
 	<meta property="og:site_name"  content="{{ site.name }}" />
-	<meta property="og:description" content="{{ content | strip_html | strip_newlines | truncate: 120 }}" />
+	<meta property="og:description" content="{{ content | strip_html | strip_newlines | truncate: 240 }}" />
 
 </head>
 
@@ -33,13 +33,13 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+                <a class="navbar-brand" href="{{ site.url }}/">{{ site.name }}</a>
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
-                    <li class="active"><a href="{{ site.baseurl }}/archive.html">Archive</a></li>
-                    <li class="active"><a href="{{ site.baseurl }}/feed.xml">RSS</a></li>
+                    <li class="active"><a href="{{ site.url }}/">Home</a></li>
+                    <li class="active"><a href="{{ site.url }}/archive.html">Archive</a></li>
+                    <li class="active"><a href="{{ site.url }}/feed.xml">RSS</a></li>
                     {% if site.github != '' %}
                       <li class="active"><a href="https://github.com/{{ site.github }}">Github</a></li>
                     {% endif %}
