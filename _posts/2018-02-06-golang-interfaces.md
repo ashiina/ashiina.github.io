@@ -8,7 +8,7 @@ comments: true
 
 Trying to get a better grasp of intefaces in Go. The talk below has been a great resource for having a deep understanding of dealing with interfaces in the language.  
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=F4wUrj6pmSI" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F4wUrj6pmSI" frameborder="0" allowfullscreen></iframe>
 <br>
 
 <script async class="speakerdeck-embed" data-id="72338d4499864bf18ee566fab22e01ec" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
