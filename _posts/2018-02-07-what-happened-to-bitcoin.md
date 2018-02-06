@@ -1,7 +1,7 @@
 ---
 title: What Happened to Bitcoin
 layout: post
-date: 2018-02-08 20:00:00
+date: 2018-02-07 20:00:00
 tags: Bitcoin Cryptocurrency
 comments: true
 ---
@@ -26,10 +26,11 @@ This shift of the perception of Bitcoin turning from a currency into a speculati
 
 Look at both the transaction fee and the confirmation time for the past year: 
 
+![bitcoin-transaction-fee](/images/2018-02-07-bitcoin-transaction-fee.png "")
+*[https://bitinfocharts.com/comparison/bitcoin-transactionfees.html#1y](https://bitinfocharts.com/comparison/bitcoin-transactionfees.html#1y)*  
 
-https://bitinfocharts.com/comparison/bitcoin-transactionfees.html#1y
-
-https://blockchain.info/charts/avg-confirmation-time?timespan=1year
+![bitcoin-confirmation-time](/images/2018-02-07-bitcoin-confirmation-time.png "")
+*[https://blockchain.info/charts/avg-confirmation-time?timespan=1year](https://blockchain.info/charts/avg-confirmation-time?timespan=1year)*  
 
 Transaction fees have settled down from the preposterous $40+ range of December 2017, but it is still no less than $5. $5 is not a realistic transaction fee when imagining a world where somebody can buy a can of coke with Bitcoin.  
 
