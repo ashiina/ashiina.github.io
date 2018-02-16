@@ -1,5 +1,5 @@
 ---
-title: What Happened to Bitcoin
+title: The current state of Bitcoin?
 layout: post
 date: 2018-02-07 20:00:00
 tags: Bitcoin Cryptocurrency
@@ -92,10 +92,9 @@ It's hard for me to imagine a truly decentralized, efficient network that people
 
 The blockchain technology, as much as it is genius, it requires a very large amount of computing power. The network justifies that computing power by rewarding the participant with actual monetary value. So, based on what I have mentioned above, the blockchain is intrinsically unable to escape centralization.  
 
-This is where my pessimism comes from. But I wish there is somebody out there that can find a breakthrough to all of this.  
+The current state of Bitcoin, and most cryptocurrencies in general, are a formation of a new financial market, slightly different from traditional securities or commodities markets. There obviously is value produced and gained from a formation of such a market, and it is eye-opening to witness such a large market emerging from thin air in less than 10 years.  
 
-Ultimately I am an optimist for technology, and am praying for this one.  
-
+Given the above, that does not translate into Bitcoin achieving its original technological and ideological goals since the time of its emergence. 
 
 
 
